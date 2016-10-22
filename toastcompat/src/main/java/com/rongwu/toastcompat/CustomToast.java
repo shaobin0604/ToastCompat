@@ -55,7 +55,7 @@ public class CustomToast implements IToast {
      * @param context
      */
     public CustomToast(Context context){
-        mContext = context;
+        mContext = context.getApplicationContext();
         mWindowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
         mParams = new WindowManager.LayoutParams();
         mParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
